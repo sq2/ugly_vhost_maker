@@ -1,2 +1,4 @@
-ugly_vhost_maker
-================
+Ugly V-Host Maker
+=================
+
+Make Apache virtual hosts on a Mac.
