@@ -17,6 +17,6 @@ It works! Here's how:
 * Confirm that the settings are correct.
 * You will be prompted for your password, since we are dealing with system files.
 * Your domain name will be added to your hosts file. For example, example.com and www.example.com would be created.
-* The separate virtual host file would be created for each site. This makes it easier to manager lots of sites. More on how to configure this later.
+* Separate virtual host files would be created for each site. This makes it easier to manager lots of sites. More on how to configure this later.
 
 ## WORK IN PROGRESS - More to come.
