@@ -18,24 +18,28 @@ It works! Here's how:
 * You will be prompted for your password, since we are dealing with system files.
 * Your domain name will be added to your hosts file. For example, example.com and www.example.com would be created.
 * Your virtual host will be appended to the .conf file chosen above. Optionally, a separate virtual host files could be created for each site. This makes it easier to manager lots of sites. More on how to configure this below.
+* Apache restarts so the new virtual host is available immediately.
+* New virtual host is ready.
+
+Most of the above is automated. After you create your first virtual host, the only option that requires an action (other than clicking on OK) is choosing a project folder. This results in much less work for you.
 
 ## Assumptions
 
+### You
+If you are a PHP, Javascript, HTML or other web programmer or designer type of person, you may find this script useful. A little knowledge about how web servers work couldn't hurt.
+
 ### Modern OS
-This script has been used since Snow Leopard. If you are running an older OS, stop reading and buy at least a Mac Mini for $599. Okay, continue reading.
+This script has been used since Snow Leopard. If you are running an older OS, stop reading and buy at least a Mac Mini for $599. Okay, continue reading. Really, everything may just work in Leopard. Try it and let me know.
 
 ### Local Apache
-We assume that Apache is configured and running on your Mac.
-
-### Knowledge
-A little knowledge about how web servers work wouldn't hurt.
+We assume that Apache is configured properly and running on your Mac. There are plenty of tutorials for this online.
 
 ### Index Files
 The virtual host will be created assuming that if an index.html file exists, it will be called first. If not, index.php is called. It's configured like this to mimic most Linux web servers.
 
 
 ## Optional Separate Virtual Host Files
-When choosing the configuration path, if a folder is entered, separate virtual hosts files will be created for each local domain. This folder should only store virtual host files created with this utility.
+When choosing the configuration path, if a folder is entered (instead of a .conf file), separate virtual hosts files will be created for each local domain. This folder should only store virtual host files created with this utility.
 ```sh
 sudo pico /private/etc/apache2/httpd.conf
 
