@@ -47,7 +47,7 @@ When the script asks for the vhosts path, enter: /path/to/vhosts/
 
 Since the .conf files will be read alphabetically, you may want to add a _httpd-vhosts.conf file in your vhosts folder (note the leading underscore). This will allow settings to come before your vhosts load. Such as
 ```sh
-'NameVirtualHost *:80'.
+NameVirtualHost *:80
 ```
 
 ## THIS README IS A WORK IN PROGRESS
